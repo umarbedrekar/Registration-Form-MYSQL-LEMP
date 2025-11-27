@@ -58,17 +58,25 @@ ssh -i "your-key.pem" ec2-user@your-public-ip
 
 Step 3: Setup LEMP Environment
 Install Nginx, PHP, MySQL:
+```bash
 sudo yum install nginx php mariadb105-server -y
+```
 
 Start & enable services:
+```bash
 sudo service nginx start
 sudo systemctl enable nginx
+```
 
+```bash
 sudo service php-fpm start
 sudo systemctl enable php-fpm
+```
 
+```bash
 sudo service mariadb start
 sudo systemctl enable mariadb
+```
 
 Step 4: Create the HTML Signup Form
 sudo nano /usr/share/nginx/html/index.html
@@ -91,16 +99,21 @@ Step 6: Setup the MySQL Database
 
 Login:
 
+```bash
 sudo mysql -u root -p
+```
 
 
 Set root password:
 
+```bash
 ALTER USER 'root'@'localhost' IDENTIFIED BY 'your_root_password';
+```
 
 
 Create database & table:
 
+```bash
 CREATE DATABASE registration_db;
 USE registration_db;
 
@@ -111,20 +124,27 @@ CREATE TABLE users (
   password VARCHAR(255),
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+```
 
 Step 7: Install MySQL PHP Extension
+```bash
 sudo yum install php8.4-mysqlnd.x86_64 -y
+```
 
 Step 8: Reload Services
+```bash
 sudo service nginx reload
 sudo service php-fpm reload
 sudo service mariadb reload
+```
 
 Final Output
 
 Open in browser:
 
+```bash
 http://your-ec2-public-ip
+```
 
 📸 index.html Output
 
