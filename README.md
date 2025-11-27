@@ -84,9 +84,6 @@ sudo nano /usr/share/nginx/html/index.html
 
 •Paste your index.html
 
-📸 Screenshot
-
-(Add index.html screenshot here)
 
 Step 5: Create the PHP Script (register.php)
 sudo nano /usr/share/nginx/html/register.php
