@@ -1,4 +1,5 @@
-Registration Form Deployment using MySQL on EC2 (LEMP Stack)
+# 🚀 **Registration Form Deployment using MySQL on EC2 (LEMP Stack)**
+
 
 This project demonstrates the deployment of a user registration form integrated with a MySQL database, hosted on an AWS EC2 instance using the LEMP Stack (Linux, Nginx, MySQL, and PHP).
 
