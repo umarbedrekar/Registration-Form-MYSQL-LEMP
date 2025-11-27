@@ -49,7 +49,8 @@ Configure:
 
 
 Step 2: SSH into EC2 Instance
-ssh -i "your-key.pem" ec2-user@public-ip
+ssh -i "your-key-name.pem" ubuntu@ec2-your-public-ip.compute.amazonaws.com
+
 
 
 Step 3: Setup LEMP Environment
