@@ -49,7 +49,7 @@ Configure:
 
 
 Step 2: SSH into EC2 Instance
-ssh -i "your-key-name.pem" ubuntu@ec2-your-public-ip.compute.amazonaws.com
+```ssh -i "your-key.pem" ec2-user@your-public-ip```
 
 
 
